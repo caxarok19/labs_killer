@@ -63,7 +63,7 @@ int main() {
         func_orb, { Eigen::Vector<double, 4>(0.994, 0.0, 0.0, -2.00158510637908252240537862224), 0 }, 100, {0.001, 1e-24,10}, Orbit);
 
     for (unsigned int i = 0; i < res.size(); i++) {
-        data3 << res[i].state[0] << " " << res[i].state[1] << " " << res[i].state[2] << std::endl;
+        data3 << res[i].state[0] <<  " " << res[i].state[2] << std::endl;
     }
 
     data3.close();
